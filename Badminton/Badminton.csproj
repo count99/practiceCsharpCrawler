@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Playwright" Version="1.39.0" />
+      <PackageReference Include="Tesseract" Version="5.2.0" />
+      <PackageReference Include="Tesseract.Drawing" Version="5.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="bin\Debug\net7.0\Microsoft.Playwright.dll" />
+      <Content Include="bin\Debug\net7.0\tessdata\equ.traineddata" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="bin\Debug\net7.0\tessdata\eng.traineddata" />
+    </ItemGroup>
+
+</Project>
